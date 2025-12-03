@@ -7,10 +7,10 @@ data = [*open("input.txt")]
 
 def findFirstHighestNum(num, buff):
     numArr = list(num)
-    HighestNum = [numArr[0], '0']
+    HighestNum = (numArr[0], '0')
     for i in range(len(numArr)-buff):
         if numArr[i+1] > HighestNum[0]:
-            HighestNum = [(numArr[i+1]), i+1]
+            HighestNum = ((numArr[i+1]), i+1)
     return HighestNum
 
 for number in data:
